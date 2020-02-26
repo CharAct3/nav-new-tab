@@ -1,0 +1,35 @@
+{
+  "name": "Nav New Tab",
+  "version": "1.1",
+  "description": "The end of Navigation!",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "https://*/",
+    "http://*/"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "36": "images/icon-36x36.png",
+      "72": "images/icon-72x72.png",
+      "144": "images/icon-144x144.png"
+    }
+  },
+  "icons": {
+    "36": "images/icon-36x36.png",
+    "72": "images/icon-72x72.png",
+    "144": "images/icon-144x144.png"
+  },
+  "manifest_version": 2
+}

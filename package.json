@@ -1,0 +1,76 @@
+{
+  "name": "nav-new-tab",
+  "version": "1.1",
+  "description": "Navigation page in chrome new tab.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-source-maps"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/prop-types": "^15.7.3",
+    "@types/react-dom": "^16.9.5",
+    "assemble": "~0.3.11",
+    "bootstrap": "^4.3.1",
+    "grunt": "~0.4.0",
+    "jquery": "1.9.1 - 3",
+    "mobx": "^5.15.2",
+    "mobx-react": "^6.1.5",
+    "parcel-plugin-asset-copier": "^1.0.0",
+    "popper.js": "^1.14.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.9.0",
+    "react-sortable-hoc": "^1.10.1",
+    "styles": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@types/chrome": "^0.0.91",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "1.19.1",
+    "sass": "^1.23.1",
+    "typescript": "^3.7.5"
+  },
+  "assetsPath": "src/static",
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragmaFrag": "React.Fragment"
+        }
+      ]
+    ]
+  },
+  "resolutions": {
+    "**/**/lodash": "^4.17.12",
+    "**/**/underscore.string": "^3.3.5",
+    "**/**/js-yaml": "^3.13.1",
+    "**/**/minimatch": "^3.0.2",
+    "**/**/marked": "^0.7.0",
+    "**/**/braces": "^2.3.1",
+    "styles/less/mime": "^2.0.3",
+    "**/**/handlebars": "^4.5.3"
+  }
+}

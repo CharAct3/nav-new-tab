@@ -1,0 +1,38 @@
+env:
+  browser: true
+  es6: true
+  webextensions: true
+
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+
+plugins:
+  - react
+  - prettier
+
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+
+rules:
+  no-unused-vars:
+    - error
+  prettier/prettier:
+    - error
+  import/prefer-default-export: off
+
+settings:
+  react:
+    pragma: React
+    version: detect

@@ -1,0 +1,115 @@
+$body-bg: #fafafa;
+$content-bg: #fff;
+
+body {
+  background-color: $body-bg;
+  font-size: 0.9rem;
+}
+
+.nav-bar {
+  background-color: $body-bg;
+}
+
+.nav-title {
+  color: rgba(0, 0, 0, .5);
+  font-size: 1.3rem;
+  user-select: none;
+}
+
+.app-main {
+  user-select: none;
+}
+
+.app-section {
+  background-color: $content-bg;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #ddd;
+  margin: 1.5rem;
+  padding: 0.5rem;
+}
+
+.app-section-edit {
+  border: #aaa8a3 0.1rem dashed;
+}
+
+.app-ingress {
+  $color: #333;
+  display: block;
+  text-decoration: none;
+  color: $color;
+  height: 42px;
+  line-height: 42px;
+  outline: none;
+  border-radius: 0.2rem;
+  margin: 0.1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.5rem;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2A75FF;
+  }
+}
+
+.app-nav-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.app-ingress-edit {
+  border: #aaa8a3 0.1rem dashed;
+
+  &:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+  }
+}
+
+#upload {
+  width: 0;
+  height: 0;
+}
+
+#upload + label {
+  color: #2A75FF;
+  border: #2A75FF 0.2rem dashed;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+}
+
+.ingress-button {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .5);
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .8);
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.active-button {
+  color: rgba(0, 0, 0, .8);
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
